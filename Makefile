@@ -8,7 +8,7 @@ $(GEN_BIN):
 	go build
 
 .PHONY: generate_rego
-generate_rego:
+generate_rego: $(GEN_BIN)
 	@rm -rf ./src/*
 	@./$(GEN_BIN) 5 ./src $(if $(file_count),$(file_count),70)
 

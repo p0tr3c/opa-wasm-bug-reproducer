@@ -7,25 +7,25 @@ deny[msg] {
 }
 
 deny[msg] {
-	rsp := sprintf("this should help %s", ["b"])
+	rsp := sprintf("this should help %s", ["g"])
 	x := sprintf("this is %d level", [1])
 	msg := {"test": sprintf("this is antoher levle %s", [x]), "rsp": rsp}
 }
 
 deny[msg] {
-	rsp := sprintf("this should help %s", ["od"])
+	rsp := sprintf("this should help %s", ["q7"])
 	x := sprintf("this is %d level", [2])
 	msg := {"test": sprintf("this is antoher levle %s", [x]), "rsp": rsp}
 }
 
 deny[msg] {
-	rsp := sprintf("this should help %s", ["uNM"])
+	rsp := sprintf("this should help %s", ["ton"])
 	x := sprintf("this is %d level", [3])
 	msg := {"test": sprintf("this is antoher levle %s", [x]), "rsp": rsp}
 }
 
 deny[msg] {
-	rsp := sprintf("this should help %s", ["Iikr"])
+	rsp := sprintf("this should help %s", ["sGoQ"])
 	x := sprintf("this is %d level", [4])
 	msg := {"test": sprintf("this is antoher levle %s", [x]), "rsp": rsp}
 }

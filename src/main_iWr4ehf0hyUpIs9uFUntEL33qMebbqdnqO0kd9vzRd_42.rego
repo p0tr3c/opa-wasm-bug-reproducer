@@ -19,13 +19,25 @@ deny[msg] {
 }
 
 deny[msg] {
-	rsp := sprintf("this should help %s", ["1YHnNhWrpjmzYv5MXO9QemJo2b7Qgpo_A5Q0Wt5DVy4Zd0zANizzx8MwC91JNjD85KSLwZaPWjO2nCfnrThbLEv0s0cEBi_S1lASQeNrFw5BCAjHmP_UoDqU9EZnaSJedyzIY82sgKiWTRuFGBEw0iskqmLHaTwe7Bx2p7x19SwsSniBtVAnMFdzZ9bvsPiSyezzXg8w4X7HvOj5lhwZN"])
+	rsp := sprintf("this should help %s", [""])
 	x := sprintf("this is %d level", [213])
 	msg := {"test": sprintf("this is antoher levle %s", [x]), "rsp": rsp}
 }
 
 deny[msg] {
-	rsp := sprintf("this should help %s", ["rabqtWGTOk7V_FJ3hQWgKI8WwWPcrNbI0PzkqKv0_yqUgPB0bLV7GrMqIQDcWZNFS3oRT__vp9ou5I0cq4Rre_GLN85Wox3V4Bm5CvamGoHJTxt4193gpxmQWqpd9qqh0srppvcvyhGfACSDWAxYj_0k4A4X3unGrwX7qgDPQ03bIDO0uvU2Dimi8UHO2YIUNXKCh3DVVD1ZLn0E21miBA"])
+	rsp := sprintf("this should help %s", [""])
 	x := sprintf("this is %d level", [214])
-	msg := {"test": sprintf("this is antoher levle %s", [x]), "rsp": rsp}
+    y := sprintf("", [])
+	msg := {"test": sprintf("this is antoher levle %s", [x]), "rsp": rsp, "trying": y}
+}
+
+deny[msg] {
+    round(1)
+    abs(1)
+    count([])
+    sum([1, 2])
+    product([1, 3])
+    max([1, 2, 3])
+    min([3, 2, 1])
+    msg := {}
 }
